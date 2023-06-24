@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230624 08:27:26.158" rpa="false" schemaversion="4">
+<suite id="s1" name="Register" source="c:\Users\ABISHAR\QAAutomation\Automation_Project\register.robot">
+<test id="s1-t1" name="Register Cermati" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230624 08:27:26.723" level="INFO">Opening browser 'chrome' to base url 'https://www.cermati.com/app/gabung'.</msg>
+<status status="PASS" starttime="20230624 08:27:26.722" endtime="20230624 08:27:32.971"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230624 08:27:32.973" endtime="20230624 08:27:33.878"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:33.880" level="INFO">Clicking element '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230624 08:27:33.879" endtime="20230624 08:27:34.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:34.075" level="INFO">Typing text 'test@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230624 08:27:34.073" endtime="20230624 08:27:34.403"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='mobilePhone']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:34.406" level="INFO">Clicking element '//input[@id='mobilePhone']'.</msg>
+<status status="PASS" starttime="20230624 08:27:34.405" endtime="20230624 08:27:34.523"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=mobilePhone</arg>
+<arg>${nomorhp}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:34.532" level="INFO">Typing text '083806978636' into text field 'id=mobilePhone'.</msg>
+<status status="PASS" starttime="20230624 08:27:34.530" endtime="20230624 08:27:34.833"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:34.839" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230624 08:27:34.838" endtime="20230624 08:27:34.932"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${sandi}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:34.937" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20230624 08:27:35.027" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230624 08:27:35.146" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230624 08:27:34.935" endtime="20230624 08:27:35.146"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='confirmPassword']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.150" level="INFO">Clicking element '//input[@id='confirmPassword']'.</msg>
+<status status="PASS" starttime="20230624 08:27:35.148" endtime="20230624 08:27:35.254"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=confirmPassword</arg>
+<arg>${confirmsandi}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.261" level="INFO">Typing password into text field 'id=confirmPassword'.</msg>
+<msg timestamp="20230624 08:27:35.349" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230624 08:27:35.440" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230624 08:27:35.258" endtime="20230624 08:27:35.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='firstName']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.444" level="INFO">Clicking element '//input[@id='firstName']'.</msg>
+<status status="PASS" starttime="20230624 08:27:35.442" endtime="20230624 08:27:35.533"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=firstName</arg>
+<arg>${namadepan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.536" level="INFO">Typing text 'test' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20230624 08:27:35.534" endtime="20230624 08:27:35.678"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='lastName']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.681" level="INFO">Clicking element '//input[@id='lastName']'.</msg>
+<status status="PASS" starttime="20230624 08:27:35.679" endtime="20230624 08:27:35.819"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=lastName</arg>
+<arg>${namabelakang}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:35.823" level="INFO">Typing text 'Testing' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20230624 08:27:35.821" endtime="20230624 08:27:36.056"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='cityAndProvince']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:36.059" level="INFO">Clicking element '//input[@id='cityAndProvince']'.</msg>
+<status status="PASS" starttime="20230624 08:27:36.057" endtime="20230624 08:27:36.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=cityAndProvince</arg>
+<arg>${kota}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:36.175" level="INFO">Typing text 'KOTA BANDUNG' into text field 'id=cityAndProvince'.</msg>
+<status status="PASS" starttime="20230624 08:27:36.173" endtime="20230624 08:27:36.382"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='autocomplete__list-item-label_-S4yV']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230624 08:27:36.382" endtime="20230624 08:27:37.254"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='autocomplete__list-item-label_-S4yV']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:37.257" level="INFO">Clicking element '//div[@class='autocomplete__list-item-label_-S4yV']'.</msg>
+<status status="PASS" starttime="20230624 08:27:37.255" endtime="20230624 08:27:37.476"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='btn_SGZcZ btn-track btn--action_kallT RegistrationForm_form-container__button__rqOgr']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230624 08:27:37.482" level="INFO">Clicking button '//button[@class='btn_SGZcZ btn-track btn--action_kallT RegistrationForm_form-container__button__rqOgr']'.</msg>
+<status status="PASS" starttime="20230624 08:27:37.481" endtime="20230624 08:27:37.686"/>
+</kw>
+<status status="PASS" starttime="20230624 08:27:26.719" endtime="20230624 08:27:37.690"/>
+</test>
+<status status="PASS" starttime="20230624 08:27:26.172" endtime="20230624 08:27:37.695"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
